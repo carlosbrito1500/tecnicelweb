@@ -1,0 +1,14 @@
+runtime: python27
+threadsafe: true
+
+handlers:
+- url: /assets
+  static_dir: assets
+
+- url: /favicon.ico
+  upload: favicon.ico
+  static_files: favicon.ico
+
+- url: /.*
+  upload: index.html
+  static_files: index.html
